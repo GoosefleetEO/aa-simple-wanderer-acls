@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = example
+source = wanderer_acls
 
 [report]
 exclude_lines =

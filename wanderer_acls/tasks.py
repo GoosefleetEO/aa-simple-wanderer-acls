@@ -8,5 +8,5 @@ logger = get_extension_logger(__name__)
 
 
 @shared_task
-def my_task():
+def audit_wanderer_acls():
     """An example task."""

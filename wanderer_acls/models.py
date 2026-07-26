@@ -10,3 +10,6 @@ class General(models.Model):
         managed = False
         default_permissions = ()
         permissions = (("basic_access", "Can access this app"),)
+
+class WandererManagedACL(models.Model):
+    pass

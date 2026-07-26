@@ -3,20 +3,19 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "allianceauth-example-plugin"
+name = "aa-simple-wanderer-acls"
 dynamic = ["version", "description"]
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [
-    { name = "John Doe", email = "john.doe@example.com" },
+    { name = "corgski", email = "hello@nyetscape.net" },
 ]
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
     "Framework :: Django :: 5.2",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.10",
@@ -26,18 +25,18 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
 dependencies = [
-    "allianceauth>=5",
+    "allianceauth>=5.2",
 ]
 
 [project.optional-dependencies]
-test = ["coverage", "factory_boy", "allianceauth-app-utils>=1.32"]
+test = ["coverage", "factory_boy"]
 
 
 [project.urls]
-Homepage = "https://github.com/YourName/example"
+Homepage = "https://github.com/GoosefleetEO/aa-simple-wanderer-acls"
 
 [tool.flit.module]
-name = "example"
+name = "wanderer_acls"
 
 [tool.isort]
 profile = "black"
@@ -51,8 +50,8 @@ sections = [
     "FIRSTPARTY",
     "LOCALFOLDER"
 ]
-known_allianceauth = ["allianceauth", "app_utils"]
-known_django = ["django", "django_webtest", "esi", "eveuniverse"]
+known_allianceauth = ["allianceauth"]
+known_django = ["django", "django_webtest", "esi"]
 
 [tool.pylint.'MASTER']
 ignore-patterns = ["__init__.py", "auth_hooks.py", "apps.py", "admin.py"]

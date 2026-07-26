@@ -7,12 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - yyyy-mm-dd
 
-## [1.0.0] - 2026-06-06
-
-This is a major update which adds support for Alliance Auth V5.
+### Added
 
 ### Changed
 
-- Updated the example app for Alliance Auth V5
-- Modernized the test suite
-- Modernized the CI pipeline
+### Fixed
